@@ -1,0 +1,8 @@
+<h1>Hello <%= @user.email %></h1>
+<p>Your favorite shows begin in 30 min.</p>
+<p>
+Channel Name: <%= @show.channel.name %></br>
+Show Name: <%= @show.name %></br>
+Show timing: <%= @show.time.strftime("%H:%M") %>
+</p>
+<p>Thanks for watching and have a great day!</p>

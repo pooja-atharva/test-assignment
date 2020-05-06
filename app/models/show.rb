@@ -1,7 +1,5 @@
 class Show < ApplicationRecord
   belongs_to :channel
-  
-  # Favorited by users
   has_many :favorite_shows
   has_many :favorited_by, through: :favorite_shows, source: :user
   
